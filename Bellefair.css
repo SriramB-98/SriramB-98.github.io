@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bellefair Regular'), local('Bellefair-Regular'), url(Sample.woff) format('woff');
+}
