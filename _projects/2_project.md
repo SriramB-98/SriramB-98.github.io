@@ -3,16 +3,20 @@ layout: page
 title: Are Neural Networks Excessively Invariant?
 description: Course project
 img: assets/img/branch_pic.png
+html: assets/pdf/nn_invar_project_report.pdf
 importance: 2
 category: work
 ---
 
+<a href="assets/img/nn_invar_project_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to report</a>  <a href="assets/img/nn_invar_project_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to code</a>
 
 Despite the remarkable success of deep neural networks in a myriad of settings, several works have demonstrated their vulnerability to imperceptible perturbations, known as adversarial attacks. On the other hand, prior works have also demonstrated the excessive insensitivity of deep networks to large-magnitude perturbations in input space. In light of these observations, we aim
 to identify techniques to study the extent of excessive invariance displayed by deep neural networks.
 Towards this, we propose a novel Null Space Projected Gradient Descent (NSPGD) attack, that
 iteratively refines image perturbations without affecting network activations. Further, we study the
 efficacy of confidence calibration of classification networks as a mode to mitigate excessive invariance, in order to train models that are robust to such attacks, while simultaneously being robust to standard adversarial attacks.
+
+
 
 
 <div class="row">
@@ -43,3 +47,4 @@ efficacy of confidence calibration of classification networks as a mode to mitig
 </div>
 
 Although adversarial training reduces the number of adversarial examples within the $$\epsilon$$ ball, the equi-confidence paths are much wider for adversarial models. This could be because adversarial models are smoother as compared to normally trained models, thus they are more invariant in directions normal to the tangent vector at that point.
+
