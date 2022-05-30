@@ -6,7 +6,7 @@ subtitle: <i>MS CS, UMD College Park  </i> |  <i> B.Tech (Hons) CS, IIT Bombay. 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_pic.jpeg
   address: >
     <p>Brendan Iribe center</p>
     <p> UMD College Park, College Park,</p>
@@ -18,3 +18,5 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hi, my name is Sriram. I am currently a Masters' student in the Computer Science department in the University of Maryland, College Park. I am currently interested in pushing the boundaries of machine learning and AI to make them more reliable and thus applicable over a wide variety of domains.
+
+Previously, I was a research fellow at Microsoft Research India and worked with Nagarajan Natarajan and Venkata Padmanabhan on building ML models for simulating network behaviours. I was also advised by Prof Sunita Sarawagi at IIT Bombay for my Bacehlor's thesis which involved evaluating the performance of BERT derived representations when given text with uncommon named entities.
