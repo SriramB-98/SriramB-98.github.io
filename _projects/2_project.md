@@ -8,7 +8,7 @@ importance: 2
 category: work
 ---
 
-<a href="assets/img/nn_invar_project_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to report</a>  <a href="assets/img/nn_invar_project_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to code</a>
+<a href="assets/img/nn_invar_project_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to report</a>  <a href="https://github.com/SriramB-98/null-invar" class="btn btn-sm z-depth-1" role="button">Link to code</a>
 
 Despite the remarkable success of deep neural networks in a myriad of settings, several works have demonstrated their vulnerability to imperceptible perturbations, known as adversarial attacks. On the other hand, prior works have also demonstrated the excessive insensitivity of deep networks to large-magnitude perturbations in input space. In light of these observations, we aim
 to identify techniques to study the extent of excessive invariance displayed by deep neural networks.
