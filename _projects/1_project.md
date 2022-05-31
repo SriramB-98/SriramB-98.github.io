@@ -2,7 +2,7 @@
 layout: page
 title: Inductive biases in Transformers
 description: course project
-img: assets/img/12.jpg
+img: assets/img/dip.jpg
 importance: 1
 category: work
 ---

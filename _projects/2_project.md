@@ -48,3 +48,4 @@ efficacy of confidence calibration of classification networks as a mode to mitig
 
 Although adversarial training reduces the number of adversarial examples within the $$\epsilon$$ ball, the equi-confidence paths are much wider for adversarial models. This could be because adversarial models are smoother as compared to normally trained models, thus they are more invariant in directions normal to the tangent vector at that point.
 
+For more details, please refer to the project report and code.
