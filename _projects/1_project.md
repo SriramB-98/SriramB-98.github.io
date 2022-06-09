@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-<a href="../../assets/pdf/image_priors_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to report</a>  <a href="https://github.com/SriramB-98/deep-image-priors" class="btn btn-sm z-depth-1" role="button">Link to code</a> <a href="https://www.youtube.com/watch?v=FmNvQclUB9Q" class="btn btn-sm z-depth-1" role="button">Link to video</a>
+<a href="../assets/pdf/image_priors_report.pdf" class="btn btn-sm z-depth-1" role="button">Link to report</a>  <a href="https://github.com/SriramB-98/deep-image-priors" class="btn btn-sm z-depth-1" role="button">Link to code</a> <a href="https://www.youtube.com/watch?v=FmNvQclUB9Q" class="btn btn-sm z-depth-1" role="button">Link to video</a>
 
 
 In this project, we investigate the nature of deep image priors in modern vision architectures like transformers and swin transformers by using methods introduced in "Deep Image Prior" by Ulyanov et al . This consists of using a randomly initialized neural network to perform certain reconstruction tasks like image denoising, image inpainting, super-resolution etc.
