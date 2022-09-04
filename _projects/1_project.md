@@ -16,7 +16,7 @@ We find the following interesting results:
 
 (a) Transformers have almost no inductive biases as compared to CNNs
 
-(b) Swin Transformers do not have any better biases as compared to vaniila Transformers
+(b) Swin Transformers do not have any better inductive biases as compared to vanilla Transformers whien it comes to image recosntruction
 
 (c) There are actually two kinds of inductive biases: predictive inductive biases (useful for learning an input to output function) and generative inductive biases (useful for learning a generative model), convolutional layers have both but image reconstruction tasks only measure generative biases. 
 
@@ -46,15 +46,13 @@ image. Similarly, SkipNet’s inpainting is almost flawless, with hardly any art
 Transformer inpainting is very poor, with multiple visible artifacts. We can also see faint grid lines
 on the image which are remnants of the patch boundaries of the transformer. Surprisingly, Swin
 transformers do not perform any better than transformers at these tasks, even though they have a
-hierarchichal architecture.
+hierarchichal architecture which is supposed to .
 
 To analyze why even Swin transformers don't work as expected, we first distinguish between two kinds of inductive biases present in models, generative biases and predictive biases. Generative bias is the bias towards generating a family of data distributions, while predictive bias is bias towards learning a particular family of input-output mapping. For example, for CNNs, shift invariance is an example of predictive bias, and not generative bias, since it is related to how the target (that is, the labels) is invariant to changes in the image. However, as we just described, convolutional layers also have generative biases, but these are very distinct from predictive biases. In general, generative inductive bias is not equivalent to or even correlated with predictive inductive bias.
 
 As we saw, the experiments in the deep image prior paper only test for image reconstruction tasks, which are good for measuring generative biases but not predictive biases. The hierarchical nature of the Swin transformer induces favorable predictive inductive biases but not generative inductive biases. This could be one reason why they are used in many predictive tasks like image classification, segmentation, etc but not generative tasks where CNNs are still state of the art. 
 
-In order to test this, we can perform the following experiment. We can equip the transformer with a stack of convolutional layers, before the input of the transformer or after the output of the transformer. When equipped before the transformer, these convolutional layers induce favorable predictive inductive biases because these convolutional layers can be trained to identify input image features (like edges, corners, etc), but hardly any generative biases because they will be suppressed by the biases of the transformer which transformers the output of the convolutional layers. When equipped after the transformer, they will hardly contribute to predictive biases because the image structure in the input signal has been completely changed by the transformer, but they will induce good generative inductive biases. In some sense, this is similar to attaching a ConvNet decoder to the transformer, which inherits the favorable generative inductive biases of the decoder.
-
-According to the theory we outlined, a model with convolutional layers after the transformer output should be much better at image reconstruction as compared to a model with convolutional layers equipped before the transformer input.
+In order to test this, we can perform the following experiment. We can equip the transformer with a stack of convolutional layers, before the input of the transformer or after the output of the transformer. When equipped before the transformer, these convolutional layers induce favorable predictive inductive biases because these convolutional layers can be trained to identify input image features (like edges, corners, etc), but hardly any generative biases because they will be suppressed by the biases of the transformer which transformers the output of the convolutional layers. When equipped after the transformer, they will hardly contribute to predictive biases because the image structure in the input signal has been completely changed by the transformer, but they will induce good generative inductive biases. In some sense, this is similar to attaching a ConvNet decoder to the transformer, which inherits the favorable generative inductive biases of the decoder. According to the theory we outlined, a model with convolutional layers after the transformer output should be much better at image reconstruction as compared to a model with convolutional layers equipped before the transformer input.
 
 
 <div class="row">
