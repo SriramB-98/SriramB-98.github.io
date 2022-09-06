@@ -16,7 +16,7 @@ We find the following interesting results:
 
 (a) Transformers have almost no inductive biases as compared to CNNs
 
-(b) Swin Transformers do not have any better inductive biases as compared to vanilla Transformers whien it comes to image recosntruction
+(b) Swin Transformers do not have any better inductive biases as compared to vanilla Transformers when it comes to image reconstruction
 
 (c) There are actually two kinds of inductive biases: predictive inductive biases (useful for learning an input to output function) and generative inductive biases (useful for learning a generative model), convolutional layers have both but image reconstruction tasks only measure generative biases. 
 
