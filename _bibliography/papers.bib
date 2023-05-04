@@ -33,6 +33,9 @@
       abstract = "The ability to remove features from the input of machine learning models is very important to understand and interpret model predictions. However, this is non-trivial for vision models since masking out parts of the input image and replacing them with a baseline color like black or grey typically causes large distribution shifts. Masking may even make the model focus on the masking patterns for its prediction rather than the unmasked portions of the image. In recent work, it has been shown that vision transformers are less affected by such issues as one can simply drop the tokens corresponding to the masked image portions. They are thus more easily interpretable using techniques like LIME which rely on input perturbation. Using the same intuition, we devise a masking technique for CNNs called layer masking, which simulates running the CNN on only the unmasked input. We find that our method is (i) much less disruptive to the model's output and its intermediate activations, and (ii) much better than commonly used masking techniques for input perturbation based interpretability techniques like LIME. Thus, layer masking is able to close the interpretability gap between CNNs and transformers, and even make CNNs more interpretable in many cases."
 }
 
+
+
+
 @misc{anshumaan2022simulating,
 	 bibtex_show={true},
       title={Simulating Network Paths with Recurrent Buffering Units}, 
