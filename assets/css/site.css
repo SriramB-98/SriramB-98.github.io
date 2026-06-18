@@ -331,6 +331,37 @@ section:first-of-type { padding-top: 64px; }
   color: var(--ink-soft);
 }
 
+.pub-press {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+}
+.pub-press-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 2px;
+}
+.pub-press a {
+  border: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+.pub-press a:hover { color: var(--accent); }
+.pub-press .sep {
+  color: var(--ink-mute);
+  font-size: 11px;
+}
+
 /* ---------- Experience ---------- */
 .timeline { list-style: none; padding: 0; margin: 0; }
 .tl-item {
