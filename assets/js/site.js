@@ -1,9 +1,14 @@
 (() => {
   const root = document.documentElement;
+  const mql = window.matchMedia('(prefers-color-scheme: dark)');
   const stored = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initial = stored || 'light';
-  root.setAttribute('data-theme', initial);
+  root.setAttribute('data-theme', stored || (mql.matches ? 'dark' : 'light'));
+
+  mql.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    }
+  });
 
   const toggle = document.querySelector('.theme-toggle');
   if (toggle) {
